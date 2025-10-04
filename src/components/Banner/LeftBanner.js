@@ -6,7 +6,7 @@ import { SiMongodb, SiTailwindcss } from "react-icons/si"
 
 export default function LeftBanner() {
   const [text] = useTypewriter({
-    words: ["Professional coder.", "Full Stack Developer(MERN).", "DSA Lover.",],
+    words: ["MERN Stack Developer", "Full-Stack Engineer", "Problem Solver", "Clean Code Enthusiast", "API Designer & Integrator", "Scalable System Builder", "Passionate Coder", "Continuous Learner"],
     loop: true,
     typeSpeed: 10,
     deleteSpeed: 20,
@@ -30,27 +30,44 @@ export default function LeftBanner() {
           />
         </h2>
         <p className="text-base font-bodyFont leading-6 tracking-wide">
-          I use react for making this portfoliyo to repersent our
-          skill and qualification also repersent our project which is made for
-          longer time.Thanks to view our portfoliyo.
+           I specialize in building modern, scalable web applications using the MERN stack.
+           This portfolio showcases my skills, qualifications, and projects crafted with dedication.
+           Thank you for visiting!
         </p>
       </div>
-      <div className="flex flex-col xl:flex-row xl:gap-0  gap-6">
+      <div className="flex flex-col xl:flex-row xl:gap-8  gap-6">
         <div className="ml-5px">
           <h2 className="text-base uppercase font-titleFont mb-4">
             FIND ME IN
           </h2>
-          <div className="flex gap-4">
-            <span className="bannerIcon">
-              <FaFacebookF />
-            </span>
-            <span className="bannerIcon">
-              <FaTwitter />
-            </span>
-            <span className="bannerIcon">
-              <FaLinkedin />
-            </span>
+         <div className="flex gap-4">
+              <a 
+                  href="https://www.linkedin.com/in/deepanshu-singh-963139259/" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="bannerIcon"
+              >
+                <FaLinkedin />
+              </a>
+              <a 
+                  href="https://x.com/DeepanshuS45573" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="bannerIcon"
+              >
+                <FaTwitter />
+              </a>
+  
+              <a 
+                  href="https://www.facebook.com/profile.php?id=100087912851406" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="bannerIcon"
+               >
+                 <FaFacebookF />
+              </a>
           </div>
+
         </div>
         <div>
           <h2 className="text-base uppercase font-titleFont mb-4">

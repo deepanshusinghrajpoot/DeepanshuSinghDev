@@ -21,12 +21,32 @@ export default function ProjectCard({ project_data }) {
             <div className="flex justify-between mt-5 gap-6">
               <h3 className="text-lg text-designColor">{project_data.title}</h3>
               <div className="flex justify-between items-center gap-5 ">
-                < span className="text-lg w-10 h-10 rounded-full bg-black    flex justify-center items-center    text-gray-50
-                                  hover:text-designColor duration-300 cursor-pointer"
-                ><FaGithub /></span>
-                <span className="text-lg w-10 h-10 rounded-full bg-black  flex justify-center items-center     text-gray-50
-                                 hover:text-designColor duration-300 cursor-pointer"
-                ><FaGlobe /></span>
+             <div className="flex justify-between items-center gap-5">
+  {/* GitHub Link */}
+  {project_data.github && (
+    <a
+      href={project_data.github}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-lg w-10 h-10 rounded-full bg-black flex justify-center items-center text-gray-50 hover:text-designColor duration-300"
+    >
+      <FaGithub />
+    </a>
+  )}
+
+  {/* Live Demo Link */}
+  {project_data.live && (
+    <a
+      href={project_data.live}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-lg w-10 h-10 rounded-full bg-black flex justify-center items-center text-gray-50 hover:text-designColor duration-300"
+    >
+      <FaGlobe />
+    </a>
+  )}
+</div>
+
               </div>
             </div>
             <div>

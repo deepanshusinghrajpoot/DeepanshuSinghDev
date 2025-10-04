@@ -3,7 +3,7 @@ import Title from "../LayOuts/Title";
 
 import Education from "./Education";
 import Skill from "./Skill";
-import Achivement from "./Achivement";
+
 
 const Resume = () => {
     let [ResumePart , setResumePart] = useState(<Education/>);
@@ -23,8 +23,6 @@ const Resume = () => {
                 <ul className=" w-full flex justify-center flex-wrap items-center gap-2 mt-10 group">
                     <li className="resumeli" onClick={()=>{setResumePart(<Education/>)}} key={1}>Educational </li>
                     <li className="resumeli" onClick={()=>{setResumePart(<Skill/>)}} key={2}>Professional Skill</li>
-
-                    <li className="resumeli" onClick={()=>{setResumePart(<Achivement/>)}} key={4}>Achivements</li>
                 </ul>
             </div>
             {ResumePart}
